@@ -287,4 +287,28 @@ wr
 
 
 
+### Authentication Commands ###
+
+ospf authentication GLOBAL command:
+
+router ospf 1
+	area 0 authentication message-digest
+	
+  
+Local interface command:
+
+interface ...
+	ip ospf message-digest-key 1 md5 cisco
+	
+	
+
+
+Plain text key command:
+
+router ospf 1
+	area o authentication 
+	
+interface ...
+	ip ospf authentication-key cisco
+
 
